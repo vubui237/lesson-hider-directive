@@ -1,0 +1,6 @@
+<li>
+    <button ng-click="deleteLesson({ lesson : lesson})">X</button>
+    <span>{{ lesson }}</span>
+    <input type="checkbox" ng-model="value" ng-click="toggleLesson(lesson, lessonSpan)">
+</li>
+<button type="button" ng-click="dayAlert({ lesson: lesson, day: lessonDay })">Which Day?</button>

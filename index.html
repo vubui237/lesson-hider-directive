@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="directivePractice">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kitkat Barz</title>
+</head>
+<body ng-controller="lessonControl">
+    <h1>Your schedule</h1>
+    <ul>
+	<lesson-hider ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson, day)" delete-Lesson="lessonDelete(lesson)" toggle-Lesson="value"></lesson-hider>
+</ul>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+<script src="app.js"></script>
+<script src="lessonCtrl.js"></script>
+<script src="lessonService.js"></script>
+<script src="lessonHider.js"></script>
+</html>

@@ -6,13 +6,12 @@ angular.module('directivePractice').directive('lessonHider', function() {
         lesson: '=',
         dayAlert: '&',
         deleteLesson: '&',
-        toggleLesson: '='
     },
     controller: function($scope, lessonSrv) {
       $scope.getSchedule = lessonSrv.getSchedule();
     },
     link: function(scope, elements, attributes) {
-      scope.toggleLesson = function(lesson, lessonSpan){
+      scope.toggleLesson = function(){
         if (scope.value == false) {
           elements.css({'text-decoration' : ''});
         }  
